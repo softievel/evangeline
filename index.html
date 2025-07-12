@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Exploring Thailand</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <style>
+    #thailand-holiday {
+      text-align: center;
+      padding: 2.5em 2em;
+      background-color: #f0f8ff;
+      border-radius: 10px;
+      margin: 30px auto;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    #thailand-holiday h2 {
+      color: #2e8b57;
+      font-family: Arial, sans-serif;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.5em;
+    }
+
+    #demo1, #demo2 {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 1em;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    #thailand-holiday button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #thailand-holiday button:hover {
+      background-color: #246b45;
+    }
+
+    #greeting {
+      margin-top: 15px;
+      font-style: italic;
+      color: #444;
+    }
+
+    #template-credit-top {
+      text-align: center;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      background-color: #ffffcc;
+      padding: 10px 0;
+      margin-bottom: 1em;
+      border: 2px solid #2e8b57;
+      border-radius: 8px;
+      color: #2e8b57;
+    }
+    #template-credit-top a {
+      color: #2e8b57;
+      text-decoration: underline;
+    }
+    #template-credit-top a:hover {
+      color: #1f5236;
+    }
+
+    #footer .inner ul.copyright li#student-id {
+      color: #d9534f;
+      font-weight: 700;
+      font-size: 1.2em;
+      letter-spacing: 1px;
+      margin-top: 5px;
+      display: inline-block;
+    }
+  </style>
+
+  <script>
+    alert("Welcome to my Thailand holiday website");
+
+    function showMessages() {
+      document.getElementById("demo1").innerHTML = "Thailand is beautiful!";
+      document.getElementById("demo2").innerHTML = "You should visit Thailand someday!";
+    }
+
+    function greetUser() {
+      var name = prompt("What is your name?");
+      if (name) {
+        document.getElementById("greeting").innerHTML = "Nice to meet you, " + name + "!";
+      } else {
+        document.getElementById("greeting").innerHTML = "Please enter your name!";
+      }
+    }
+  </script>
+</head>
+<body class="is-preload">
+
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+      <a href="index.html" class="logo"><strong>Exploring Thailand</strong></a>
+      <nav>
+        <a href="#menu">Menu</a>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="malls.html">Mall</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="cafes.html">Cafes</a></li>
+        <li><a href="nightlife.html">Nightlife</a></li>
+        <li><a href="streetfood.html">Street Food</a></li>
+        <li><a href="flowerpark.html">Flower Park</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner" class="major">
+      <div class="inner">
+        <header class="major">
+          <h1>Vacation to Thailand</h1>
+        </header>
+        <div class="content">
+          <p>Are you curious about my Thailand trip?</p>
+          <ul class="actions">
+            <li><a href="#one" class="button next scrolly">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORIGINAL TEMPLATE CREDIT -->
+    <div id="template-credit-top">
+      Original template from: <a href="https://html5up.net/forty" target="_blank" rel="noopener noreferrer">HTML5 UP - Forty</a>
+    </div>
+
+    <!-- Thailand Holiday Section -->
+    <section id="thailand-holiday">
+      <h2>Let's explore the beauty of Thailand</h2>
+      <p id="demo1">Check out my Thailand memories!</p>
+      <p id="demo2"></p>
+
+      <div class="button-group">
+        <button type="button" onclick="showMessages()">Click Me!</button>
+        <button type="button" onclick="greetUser()">Enter Your Name!</button>
+      </div>
+      <p id="greeting"></p>
+    </section>
+
+    <!-- Gallery Tiles -->
+    <section id="one" class="tiles">
+      <article>
+        <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+        <header class="major">
+          <h3><a href="malls.html" class="link">Malls</a></h3>
+          <p>See how a luxurious mall looks in Thailand</p>
+        </header>
+      </article>
+      <article>
+        <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+        <header class="major">
+          <h3><a href="restaurants.html" class="link">Restaurants</a></h3>
+          <p>Must-visit food spots</p>
+        </header>
+      </article>
+      <article>
+        <span class="image"><img src="images/pic03.jpg" alt="" /></span>
+        <header class="major">
+          <h3><a href="cafes.html" class="link">Cafes</a></h3>
+          <p>Cozy cafes and aesthetic photo spots</p>
+        </header>
+      </article>
+      <article>
+        <span class="image"><img src="images/pic04.jpg" alt="" /></span>
+        <header class="major">
+          <h3><a href="nightlife.html" class="link">Nightlife</a></h3>
+          <p>Lively city</p>
+        </header>
+      </article>
+      <article>
+        <span class="image"><img src="images/pic05.jpg" alt="" /></span>
+        <header class="major">
+          <h3><a href="streetfood.html" class="link">Street Food</a></h3>
+          <p>So delicious!</p>
+        </header>
+      </article>
+      <article>
+        <span class="image"><img src="images/pic06.jpg" alt="" /></span>
+        <header class="major">
+          <h3><a href="flowerpark.html" class="link">Flower Park</a></h3>
+          <p>Such a beautiful park!</p>
+        </header>
+      </article>
+    </section>
+
+    <section id="two">
+      <div class="inner">
+        <header class="major">
+          <h2>Which place seems the most interesting?</h2>
+        </header>
+        <p>I had so much fun. A lot of things to see.</p>
+        <ul class="actions">
+          <li><a href="#one" class="button next">Let's see!</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Untitled</li>
+        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        <li id="student-id">ID: 24229523 - Evangeline Christabel Tayven</li>  
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
